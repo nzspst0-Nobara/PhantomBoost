@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #23272b;
+  color: #f3f7fa;
+}
+header {
+  background: linear-gradient(120deg, #293c59, #456198);
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+}
+header h1 {
+  margin: 0 0 0.2em 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+header p {
+  margin: 0;
+  font-size: 1.13em;
+}
+
+section {
+  max-width: 900px;
+  margin: 2.5em auto;
+  padding: 1.5em 1em;
+  background: #2c3136f2;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #1119;
+}
+
+h2 {
+  color: #8dc2f8;
+  margin: 0 0 1em 0;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.card {
+  background: #232830;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px #0007;
+  padding: 1em 1.3em;
+  flex: 1 1 210px;
+  min-width: 190px;
+  max-width: 250px;
+}
+.card h3 { color: #38a1ee; margin: 0 0 0.7em; }
+.card ul { margin: 0; padding-left: 1em; }
+.card li { margin: 0.32em 0; }
+
+.payment {
+  text-align: center;
+}
+.pay-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+.pm {
+  margin: 0.7em 0;
+  padding: 1em;
+  background: #22262b;
+  border-radius: 7px;
+  min-width: 182px;
+}
+.pm.paypal {
+  background: #0070ba;
+  color: #fff;
+  font-size: 1.18em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.pm.paypal:hover { background: #0099ff; color: #fff; }
+
+.pm.crypto { color: #abe2f5; }
+.pm.crypto span.copy {
+  color: #ffd700;
+  cursor: pointer;
+  font-family: monospace;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: background 0.15s;
+}
+.pm.crypto span.copy:hover { background: #2e3947; }
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+.contact li {
+  margin: 0.75em 0;
+  font-size: 1.05em;
+}
+.contact a {
+  color: #79caf5;
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #16181c;
+  color: #6b7a8f;
+  font-size: 1em;
+  margin-top: 2em;
+  border-top: 1px solid #28303b;
+}
+@media (max-width: 700px) {
+  .cards, .pay-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+  section { padding: 1em 5vw; }
+}

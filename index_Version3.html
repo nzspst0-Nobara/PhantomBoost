@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phantom - Boost & Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Phantom Shop</h1>
+    <p>Boost & Currency for WoW Retail, WoW Classic, Fellowship, Path of Exile 2</p>
+  </header>
+
+  <section class="services">
+    <h2>Services & Prices</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>WoW Retail</h3>
+        <ul>
+          <li>Level Boost: <b>$30</b></li>
+          <li>Gold: <b>$5/100k</b></li>
+          <li>Account: <b>from $80</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>WoW Classic</h3>
+        <ul>
+          <li>Level Boost: <b>$25</b></li>
+          <li>Gold: <b>$12/100g</b></li>
+          <li>Account: <b>from $60</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Fellowship</h3>
+        <ul>
+          <li>Premium Coins: <b>$20/1000</b></li>
+          <li>Level Service: <b>$18</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Path of Exile 2</h3>
+        <ul>
+          <li>Currency: <b>$15/10ex</b></li>
+          <li>Level Service: <b>$25</b></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="payment">
+    <h2>Payment Methods</h2>
+    <div class="pay-methods">
+      <a href="https://paypal.me/Ernis822" target="_blank" class="pm paypal">PayPal</a>
+      <div class="pm crypto">
+        <p>USDT (TRC20): <span class="copy" onclick="copyText('TRC-ADDRESS')">TRC-ADDRESS</span></p>
+        <p>USDT (BEP20): <span class="copy" onclick="copyText('BEP20-ADDRESS')">BEP20-ADDRESS</span></p>
+        <p>Binance: <span class="copy" onclick="copyText('BINANCE-UID')">Ernismarsf@gmail.com</span></p>
+        <small>Click address to copy</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Order / Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:youremail@example.com">ernismarsf@gmail.com</a></li>
+      <li>Telegram: <a href="https://t.me/yourtelegram" target="_blank">https://t.me/ErnismarSF</a></li>
+      <li>Discord: <span class="copy" onclick="copyText('YourDiscordTag#0000')">nzspst0</span></li>
+    </ul>
+    <p>Send your order info and transaction ID. Fast reply!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Game Shop – All rights reserved.</p>
+  </footer>
+
+  <script>
+    function copyText(txt) {
+      navigator.clipboard.writeText(txt);
+      alert('Copied: ' + txt);
+    }
+  </script>
+</body>
+</html>
