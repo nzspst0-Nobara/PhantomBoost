@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phantom – Epic Boost & Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-wrap">
+      <img src="logo.svg" alt="Logo" height="40"/>
+      <h1>Phantom Shop</h1>
+    </div>
+    <p class="subtitle">Get Boosts & Currency for WoW Retail, WoW Classic, Fellowship, PoE 2</p>
+    <a href="#contact" class="action-btn">Order Now</a>
+  </header>
+
+  <section class="services">
+    <h2>Services & Prices</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>WoW Retail</h3>
+        <ul>
+          <li>Level Boost <span class="price">$30</span></li>
+          <li>Gold <span class="price">$15/100k</span></li>
+          <li>Account <span class="price">from $80</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>WoW Classic</h3>
+        <ul>
+          <li>Level Boost <span class="price">$25</span></li>
+          <li>Gold <span class="price">$12/100g</span></li>
+          <li>Account <span class="price">from $60</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Fellowship</h3>
+        <ul>
+          <li>Premium Coins <span class="price">$20/1000</span></li>
+          <li>Level Service <span class="price">$18</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Path of Exile 2</h3>
+        <ul>
+          <li>Currency <span class="price">$15/10ex</span></li>
+          <li>Level Service <span class="price">$25</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment">
+    <h2>Payment Methods</h2>
+    <div class="pay-methods">
+      <a href="https://paypal.me/YOURPAYPAL" target="_blank" class="pm paypal">PayPal</a>
+      <div class="pm crypto">
+        <p>USDT (TRC20): <span class="copy" onclick="copyText('TRC-ADDRESS')">TRC-ADDRESS</span></p>
+        <p>USDT (BEP20): <span class="copy" onclick="copyText('BEP20-ADDRESS')">BEP20-ADDRESS</span></p>
+        <p>Binance: <span class="copy" onclick="copyText('BINANCE-UID')">BINANCE-UID</span></p>
+        <small>Click address to copy</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Order & Contact</h2>
+    <ul>
+      <li><b>Email:</b> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+      <li><b>Telegram:</b> <a href="https://t.me/yourtelegram" target="_blank">@yourtelegram</a></li>
+      <li><b>Discord:</b> <span class="copy" onclick="copyText('YourDiscordTag#0000')">YourDiscordTag#0000</span></li>
+    </ul>
+    <p>Send your order info and transaction ID. Fast reply!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Game Shop – All rights reserved.</p>
+  </footer>
+
+  <script>
+    function copyText(txt) {
+      navigator.clipboard.writeText(txt);
+      alert('Copied: ' + txt);
+    }
+  </script>
+</body>
+</html>

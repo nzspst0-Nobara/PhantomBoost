@@ -1,0 +1,13 @@
+<svg width="130" height="40" viewBox="0 0 130 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60a9fb"/>
+      <stop offset="100%" stop-color="#9527dd"/>
+    </linearGradient>
+    <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#222" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect rx="18" width="130" height="40" fill="url(#g1)" filter="url(#f1)" />
+  <text x="50%" y="50%" text-anchor="middle" dy="0.35em" font-family="Segoe UI,Sans-serif" font-size="19" fill="#fff" font-weight="bold" filter="url(#f1)">Game Shop</text>
+</svg>

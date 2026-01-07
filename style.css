@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(125deg, #291b37 0%, #274764 100%);
+  color: #eaefff;
+}
+
+header {
+  background: linear-gradient(120deg, #2a145b 0%, #314567 100%);
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+  box-shadow: 0 2px 20px #2a145b77;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-shadow: 0 2px 24px #341d6077;
+}
+.subtitle {
+  font-size: 1.15em;
+  color: #b0cfff;
+  margin: 0.3em 0 1em 0;
+}
+.action-btn {
+  display: inline-block;
+  margin-top: 0.6em;
+  background: linear-gradient(90deg, #60a9fb 0%, #9527dd 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.9em 2.5em;
+  border-radius: 25px;
+  font-size: 1.08em;
+  box-shadow: 0 2px 8px #4a2a9f55;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.action-btn:hover {
+  background: linear-gradient(90deg, #4faefc 0%, #884bdc 100%);
+}
+
+section {
+  max-width: 1000px;
+  margin: 2.5em auto;
+  padding: 2em 1em;
+  background: rgba(34, 39, 83, 0.5);
+  border-radius: 32px;
+  box-shadow: 0 0 32px #21234877;
+  backdrop-filter: blur(4.5px);
+}
+
+h2 {
+  color: #a176ff;
+  font-size: 1.43em;
+  margin: 0 0 1.5em 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+.card {
+  background: rgba(255,255,255,0.09);
+  border-radius: 20px;
+  box-shadow: 0 4px 44px #28156633;
+  padding: 1.5em 1.7em;
+  min-width: 220px;
+  max-width: 260px;
+  margin: 0.8em;
+  flex: 1 1 240px;
+  backdrop-filter: blur(10px);
+  border: 1.5px solid #60437a3a;
+  transition: box-shadow 0.22s;
+}
+.card:hover {
+  box-shadow: 0 8px 70px #7B45E899, 0 2px 16px #2a145b55;
+}
+.card h3 {
+  color: #58bef6;
+  margin: 0 0 1em 0;
+  font-size: 1.22em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.card ul {
+  padding-left: 1.1em;
+  margin: 0;
+}
+.card li {
+  margin: 0.6em 0;
+  font-size: 1.08em;
+  color: #fbeafe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  color: #e1cd62;
+  font-weight: 700;
+  background: rgba(70,54,30,0.16);
+  border-radius: 9px;
+  padding: 0.04em 0.6em;
+  min-width: 80px;
+  text-align: center;
+  margin-left: 1em;
+}
+
+.payment {
+  text-align: center;
+}
+.pay-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+.pm {
+  margin: 1em 0;
+  padding: 1.2em;
+  background: rgba(40,46,85,0.78);
+  border-radius: 15px;
+  min-width: 180px;
+  font-size: 1em;
+  box-shadow: 0 2px 20px #4030e655;
+  border: 1.2px solid #6d6de73a;
+}
+.pm.paypal {
+  background: linear-gradient(90deg, #0070ba 0%, #00C1FF 100%);
+  color: #fff;
+  font-size: 1.18em;
+  font-weight: 600;
+}
+.pm.paypal:hover {
+  background: linear-gradient(90deg, #0099ff 0%, #4114d1 100%);
+  color: #fff;
+}
+.pm.crypto { color: #b6f8ff; background: rgba(41,44,61,0.94);}
+.pm.crypto span.copy {
+  color: #ffd700;
+  cursor: pointer;
+  font-family: monospace;
+  padding: 0 3px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.pm.crypto span.copy:hover { background: #474a5ec5; }
+.pm.crypto small { color: #e2f8e0; font-size: 0.85em; }
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+.contact li {
+  margin: 0.96em 0;
+  font-size: 1.09em;
+}
+.contact a {
+  color: #79caf5;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.contact span.copy {
+  background: #211d3a;
+  color: #bb95fd;
+  padding: 2px 7px;
+  border-radius: 8px;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 1.02em;
+  margin-left: 4px;
+}
+.contact span.copy:hover { background: #533a7c; }
+footer {
+  text-align: center;
+  padding: 1.9em 0 1em 0;
+  background: #18142e;
+  color: #8778a7;
+  font-size: 1em;
+  margin-top: 3em;
+  border-top: 1px solid #35126e33;
+}
+@media (max-width: 900px) {
+  .cards, .pay-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+  section { padding: 1.3em 3vw; }
+  header { padding: 1.3em 1em 1em 1em; }
+  .logo-wrap h1 { font-size: 1.25em;}
+}
